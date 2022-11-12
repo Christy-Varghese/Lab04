@@ -1,0 +1,122 @@
+/* Name: Christy Varghese
+Student ID: 1082636
+Course: INFO 6128
+Date: 08 Oct 2022
+Professor: Marcelo Hespanhol
+Lab 02
+Link: https://christy-varghese.github.io/PWA/
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #e4d3e4;
+}
+
+/* Header */
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.header img{
+    width: 60px;
+    height: 60px;
+}
+
+h3{
+    font-size: 1.5rem;
+    font-weight: 1000;
+    color: rgb(0, 0, 0);
+    margin-left: 20px;
+}
+
+/* Add Song */
+.song-section h3{
+  background-color: rgb(192, 36, 239);
+  color: white;
+  padding: 5px;
+  font-weight: 600;
+  padding-left: 20px;
+  margin-left: 0;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem;
+}
+  
+.form-btn {
+    display: flex;
+    justify-content: flex-end;
+    margin: 1rem;
+}
+.form-input label{
+    font-size: 1rem;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.form-input input{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(192, 36, 239) !important;
+    outline: none;
+}
+
+.form-btn input{
+    padding: 4px 20px;
+    border-radius: 5px;
+    background-color: rgb(140, 40, 221);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+/* List of Songs */
+.list-song-section h3{
+  background-color: rgb(192, 36, 239);
+  color: white;
+  padding: 5px;
+  font-weight: 600;
+  padding-left: 20px;
+  margin-left: 0;
+}
+
+.list-songs{
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 1rem 1rem;
+  background-color: white;
+  border: 2px solid  rgb(192, 36, 239);;
+}
+
+.list-songs h4{
+  font-size: 1rem;
+  font-weight: 200;
+  margin-bottom: 5px;
+}
+
+/* Desktop View */
+@media screen and (min-width: 768px) {
+    #list-song-container{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        margin: 10px;
+    }
+    
+}

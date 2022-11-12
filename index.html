@@ -1,0 +1,80 @@
+<!-- 
+Name: Christy Varghese
+Student ID: 1082636
+Course: INFO 6128
+Date: 08 Oct 2022
+Professor: Marcelo Hespanhol
+Lab 02
+Link: https://christy-varghese.github.io/PWA/
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- Meta tags -->
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="A application where you can save your favourite music playlist.">
+      <meta name="keywords" content="music, playlist, favourite, save, application">
+      <meta name="author" content="Christy Varghese">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+      <meta name="apple-mobile-web-app-title" content="Music App">
+      <meta name="theme-color" content="rgb(192, 36, 239)">
+      <!-- Manifest link  -->
+      <link rel="manifest" href="manifest.json">
+
+      <!-- CSS link -->
+      <link rel="icon" type="image/png" sizes="512x512" href="assets/icons/logo_icon_512.png">
+      <link rel="apple-touch-icon" type="image/png" sizes="192x192" href="assets/icons/192.png">
+      <link rel="stylesheet" href="css/main.css">
+      <title>Music App</title>
+   </head>
+   <body>
+      <!-- Header -->
+      <div class="header">
+         <img src="assets/icons/logo_icon_512.png" alt="logo">
+         <h3>My Music App</h3>
+      </div>
+      <!-- Song form -->
+      <div class="song-section">
+         <h3>New Song</h3>
+         <form name="song-form" action="">
+
+            <div class="form-input">
+               <label for="title">Title:</label>
+               <input type="text" name="title" id="title" placeholder="Enter the title of the song" required/>
+               <p class="error title-error"></p>
+            </div>
+
+            <div class="form-input">
+               <label for="artist">Artist:</label>
+               <input type="text" name="artist" id="artist" placeholder="Enter the artist name" required/>
+               <p class="error artist-error"></p>
+            </div>
+            <div class="form-btn">
+               <input type="submit" value="Add" id="add_btn"/>
+            </div>
+         </form>
+      </div>
+      <!-- List of Songs -->
+      <div class="list-song-section">
+         <h3>List of Songs </h3>
+         <div id="list-song-container">
+            <div class="list-songs">
+               <h2 class="list-song-title">Let her go</h2>
+               <h4 class="list-song-artist">Passenger</h4>
+            </div>
+            <div class="list-songs">
+               <h2 class="list-song-title">Crazy</h2>
+               <h4 class="list-song-artist">Aerosmith</h4>
+            </div>
+         </div>
+      </div>
+
+      <!-- JS Link -->
+      <script src="javascript/scripts.js"></script>
+
+   </body>
+</html>
